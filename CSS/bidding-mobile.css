@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
 
-
 body,
 h1,
 h2,
@@ -15,15 +14,13 @@ dd {
   padding: 0;
 }
 
-
 body {
-    background: transparent;
-    margin-top: 4.5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
+  background: transparent;
+  margin-top: 4.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 /***  HEADER IS READY **/
 
@@ -40,7 +37,7 @@ body {
   justify-content: center;
 }
 
-.header a i{
+.header a i {
   color: #000000;
   font-size: 2.6rem;
   position: fixed;
@@ -48,7 +45,7 @@ body {
 }
 
 #b-summ {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 1.8rem;
@@ -118,12 +115,9 @@ body {
   background-color: aqua;
 }
 
-
-#last_day{
+#last_day {
   margin-bottom: 7rem;
 }
-
-
 
 /** BID CONFRIMATION **/
 
@@ -183,10 +177,6 @@ body {
   text-align: center;
 }
 
-
-
-
-
 /** BOTTOM NAV-BAR READY ***/
 
 .bottom-nav {
@@ -198,15 +188,14 @@ body {
   left: 0;
   display: flex;
   justify-content: space-around;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.25);
 }
 
 .bottom-nav i {
   color: #424242;
-  font-size: 2.3rem;;
+  font-size: 2.3rem;
 }
-
 
 .bx {
   font-size: 30px;
@@ -214,7 +203,7 @@ body {
 }
 
 .nav-item .active {
-  color: #6A00FF;
+  color: #6a00ff;
   text-shadow: 0px 0px 10px #2f74ff7a;
 }
 
@@ -223,4 +212,53 @@ body {
   font-size: 0.6rem;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.close-modal1,
+.close-modal2 {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.6rem;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal1 h1,
+.modal2 h1 {
+  font-size: 1rem;
+  text-align: center;
+}
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.modal1,
+.modal2 {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+
+  background-color: white;
+  padding: 3.5rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
 }
