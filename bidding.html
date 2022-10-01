@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/CSS/bidding-mobile.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/bidding-mobile.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-
     <div class="header">
-      <a href="/home.html"><i class='bx bx-chevron-left' ></i></a>
+      <a href="/home.html"><i class="bx bx-chevron-left"></i></a>
       <h3 id="b-summ">Available Sessions</h3>
     </div>
 
@@ -24,7 +32,7 @@
         <h1 class="day">Thursday</h1>
       </div>
 
-      <div class="time-slots" >
+      <div class="time-slots">
         <button class="time">8:00-9:00</button>
         <button class="time">9:00-10:00</button>
         <button class="time tournament">10:00-11:00</button>
@@ -40,7 +48,7 @@
         <h1 class="day">Friday</h1>
       </div>
 
-      <div class="time-slots" >
+      <div class="time-slots">
         <button class="time">8:00-9:00</button>
         <button class="time">9:00-10:00</button>
         <button class="time">10:00-11:00</button>
@@ -58,24 +66,33 @@
       </div>
     </div>
 
+    <div class="modal1 hidden">
+      <button class="close-modal1">&times;</button>
+      <h1>Bid Successfully Registered..</h1>
+    </div>
+    <div class="modal2 hidden">
+      <button class="close-modal2">&times;</button>
+      <h1>Invalid Bid..</h1>
+    </div>
+
+    <div class="overlay hidden"></div>
+
     <nav class="bottom-nav">
-      
       <a href="/home.html" class="nav-item">
-          <i class='bx bx-home active'></i>
+        <i class="bx bx-home active"></i>
       </a>
 
       <a href="/Bid_Status.html" class="nav-item">
-          <i class='bx bx-money-withdraw'></i>
+        <i class="bx bx-money-withdraw"></i>
       </a>
 
       <a href="/support.html" class="nav-item">
-          <i class='bx bx-support'></i>
+        <i class="bx bx-support"></i>
       </a>
 
       <a href="/account.html" class="nav-item">
-          <i class='bx bx-user'></i>
+        <i class="bx bx-user"></i>
       </a>
-
     </nav>
 
     <script src="/JS/bidding.js"></script>
