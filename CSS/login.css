@@ -87,12 +87,42 @@ input.input {
     color: #8A8A8A;
 }
 
+#form .inputBox{
+    position: relative;
+}
+
+
+#form.valid .inputBox:before{
+    content: '';
+    position: absolute;
+    right: 39px;
+    top:26px;
+    width: 24px;
+    height: 24px; 
+    background: url(/images/valid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+
+
+#form.invalid .inputBox:before{
+    content: '';
+    position: absolute;
+    right: 39px;
+    top:26px;
+    width: 24px;
+    height: 24px; 
+    background: url(/images/invalid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+
 #em{
     margin-bottom: 0rem;
 }
 
 
-.link a{
+#register_now{
     text-decoration: none;
     color: #3F72AF;
 }
